@@ -1,8 +1,8 @@
 class Api 
     def self.get_heroes(super_person)
-        ## what endpoint will I need
-        url = "https://superheroapi.com/api/853701521804821/1"
-        ## how do I go there and get what I need
+        ## what endpoint will I need?
+        url = "https://www.superheroapi.com/api.php/853701521804821/search/#{super_person}"
+        ## how do I go there and get what I need?
         response = Net::HTTP.get(URI(url))
         binding.pry
         ## how do I handle that json and turn it into data
