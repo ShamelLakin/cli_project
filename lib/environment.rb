@@ -4,7 +4,9 @@
 require "pry"
 require "httparty" ## interacting with my api
 require "json"  ## parsing data from api in json
+require 'dotenv/load'
 
-require_relative "./cli_hero/cli"
-require_relative "./cli_hero/api"
-require_relative "./cli_hero/super_hero"
+require_relative "./cli_news/cli"
+require_relative "./cli_news/api"
+require_relative "./cli_news/article"
+
